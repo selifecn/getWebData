@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GetWebSource - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/GetWebSource.res" /d "NDEBUG" /d "_AFXDLL" "D:\sky\中和\2邮箱攻击系统\邮箱攻击程序\客户端\dll GetWebData\GetWebSource.rc"" 
+Creating temporary file "C:\DOCUME~1\lsq\LOCALS~1\Temp\RSPCA.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/GetWebSource.pdb" /machine:I386 /out:"Release/GetWebSource.exe" 
+".\Release\ADOWeb.obj"
+".\Release\base64.obj"
+".\Release\GetWebSource.obj"
+".\Release\GetWebSourceDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\WebData.obj"
+".\Release\GetWebSource.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lsq\LOCALS~1\Temp\RSPCA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+GetWebSource.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
